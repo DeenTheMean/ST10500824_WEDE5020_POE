@@ -1,136 +1,117 @@
-**PROJECT TITLE:**
+# Vision Security Systems Website
 
-Website for Vision Security Systems
+**By ST10500824 (Deen Baderoen)**
 
+## Project Overview
 
+This project aims to create a fully functioning website using HTML, CSS and JavaScript for the security company Vision Security Systems, a security installations company based in Somerset West, South Africa.
 
-**STUDENT INFORMATION:**
+Vision Security Systems is a highly acclaimed, independently-owned business that doesn't let their customers down. However, they currently lack an online presence in the form of a website. This project will solve this issue through the development of a fully fledged website for Vision Security Systems.
 
-Name: Deen Baderoen
+The website will consist of multiple pages that showcase their services, give more information, allow users to send enquiries, and provide ways for keen users to contact the business.
 
-Student number: ST10500824
+This project should be completed by the 2nd of November 2026.
 
-
-
-**PROJECT OVERVIEW:**
-
-This project aims to create a fully functioning website using HTML, CSS and JavaScript for the security company Vision Security Systems.
-
-
-
-**WEBSITE GOALS \& OBJECTIVES:**
+## Website Goals and Objectives
 
 The main goal of this website is to provide an accessible and easy-to-navigate space that explains and showcases what Vision Security Systems does, what it offers as a company, and how and where you can contact them. I am making this website in hopes of achieving a greater online presence for the company. Vision Security Systems wishes for more exposure and, thus, more interested customers.
 
+## Target Audience
 
+- People with property in the Helderberg area (Strand, Gordon’s Bay, Somerset West, Macassar, Sir Lowry’s Pass).
+- People with property in Cape Town, Stellenbosch and the surroundin winelands.
+- Those in need of any security installations for their home/business.
+- Those in need of security system repairs or upgrades for their home/business.
+- Anyone looking for quality and efficient service.
 
-**KEY FEATURES \& FUNCTIONALITY:**
+## Key Features and Functionality
 
-Homepage - Will include the hero image, a brief overview of the organisation and a call to action to view the services offered and to contact the organisation.
+The website currently consists of six pages:
 
-About Us - Will display a lengthier description of the organisation’s history, mission, and goals.
+**Homepage**: Includes the hero image, a brief overview of the organisation and a call to action to view the services offered and to contact the organisation.
 
-Services - Will show and explain every service the organisation offers.
+**About Us**: Displays a lengthier description of the organisation’s history, mission, and goals.
 
-Enquiry - Will include a form for enquiries regarding the organisation. Will also include a Frequently Asked Questions (FAQ) section.
+**Services**: Showcases and explains every service the organisation offers.
 
-Contact - Will consist of contact information (email, phone number, WhatsApp, address).
+**Enquiry**: Includes a form for enquiries regarding the organisation. Also includes a Frequently Asked Questions (FAQ) section.
 
+**Contact**: Consists of contact information (email, phone number, WhatsApp, address).
 
+## Technical Implementation
 
+- HTML5 for content and structure.
+- CSS for styling and design.
+- JavaScript for interactivity.
+- VS Code as the IDE used for development.
+- Git and GitHub used for version control.
 
+## Timeline and Milestones
 
-**TIMELINE AND MILESTONES:**
+<img src="images/timeline1.png" alt="First screenshot of timeline" width="950px"/>
+<img src="images/timeline2.png" alt="Second screenshot of timeline" width="950px"/>
+<img src="images/timeline3.png" alt="Third screenshot of timeline" width="950px"/>
 
-Refer to ST10500824\_Part 1/Chosen Proposal/Full Website Proposal.docx for screenshots of the timeline and milestones.
+## Part 1 Details
 
+### Consists of
 
+- Two short website proposals.
+- A full website proposal of chosen organisation.
+- Research relating to the chosen organisation.
+- The basic structure and content of the website written in HTML.
 
-**PART 1 DETAILS:**
+## Sitemap
 
-Part 1 consists of:
+The main page is the **index page**. All pages can be accessed from any page via the navigation bar.
 
-&#x20; - two short website proposals
+### Index Page
 
-&#x20; - a full website proposal of chosen organisation
+- Hero image and heading.
+- Brief organisation overview.
+- Preview of some services provided.
+- Call to action banner.
 
-&#x20; - research relating to the chosen organisation
+### About Page
 
-&#x20; - the basic structure and content of the website written in HTML
+- Page heading.
+- Description of company.
+- Mission and vision.
+- Call to action banner.
 
+### Services Page
 
+- Page heading.
+- List of services provided.
+- Call to action banner.
 
-**SITEMAP:**
+### Enquiry Page
 
-index
+- Page heading.
+- Form.
+- FAQ.
 
-&#x20; - hero image and heading
+### Contact Page
 
-&#x20; - brief organisation overview
+- Page heading.
+- Contact details.
+- Physical address and operating hours.
+- Call to action banner.
 
-&#x20; - preview of some services provided
+## Changelog
 
-&#x20; - call to action banner
+See [CHANGELOG.md](CHANGELOG.md) detailed version history and changes made.
 
-
-
-about
-
-&#x20; - page heading
-
-&#x20; - description of company
-
-&#x20; - mission and vision
-
-&#x20; - call to action banner
-
-
-
-services
-
-&#x20; - page heading
-
-&#x20; - list of services provided
-
-&#x20; - call to action banner
-
-
-
-enquiry
-
-&#x20; - page heading
-
-&#x20; - form
-
-&#x20; - FAQ
-
-
-
-contact
-
-&#x20; - page heading
-
-&#x20; - contact details
-
-&#x20; - physical address and operating hours
-
-&#x20; - call to action banner
-
-
-
-**REFERENCES:**
+## References
 
 Afrihost, 2026. Hosting. \[Online] Available at: https://www.afrihost.com \[Accessed 20 August 2026].
 
-
-
 Baderoen, E., 2026. Owner of Vision Security Systems. Interviewed by Deen Baderoen. \[Personal interview], 15 August 2026, 17:30.
 
+Pixabay, n.d. Images. [Online]. Available at: https://www.pixabay.com. [Accessed 20 August 2026].
 
-
+Unsplash, n.d. Images. [Online]. Available at: https://www.unsplash.com. [Accessed 20 August 2026].
 Wireframes created in Microsoft PowerPoint.
-
-
 
 Timeline created in Microsoft Planner.
 
