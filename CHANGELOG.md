@@ -13,9 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Initial commit of HTML, CSS, README, CHANGELOG, and image files.
+- Initial commit of HTML, README, CHANGELOG, and image files.
 - Filled web pages with basic content
 - Created layout and structure of web pages
-- Linked HTML and CSS files
 - Updated README file formatting
 - Added more description to README file
