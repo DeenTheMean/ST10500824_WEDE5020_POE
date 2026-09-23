@@ -34,8 +34,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Overview section layout and visual styling.
     - Services preview section layout and visual styling.
     - Call-to-action banner layout and visual styling.
-    - Minor changes to page content.
 - Added Vision favicon.
+
+### Changed
+
+- Minor changes to index.html page content.
 
 ## [0.1.0] - 2026-09-18
 
