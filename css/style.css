@@ -122,6 +122,8 @@ nav li:not(:last-child){
     padding-right: 1.5rem;
 }
 
+/* ========= HOME PAGE ========= */
+
 /* Hero Section */
 
 .hero{
@@ -196,6 +198,29 @@ nav li:not(:last-child){
     padding: 1.2rem 1.2rem;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    background-color: hsl(215, 27%, 16%);
+}
+
+/* ========= ABOUT PAGE ========= */
+
+.backstory-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.backstory img{
+    width: 95%;
+}
+
+.mission-vision-cards-container{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.mission-vision-cards{
+    border: 1px solid hsl(0, 0%, 100%, 0.2);
+    padding: 1.2rem 1.2rem;
     background-color: hsl(215, 27%, 16%);
 }
 
