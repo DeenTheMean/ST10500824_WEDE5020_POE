@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -16,7 +17,7 @@ body{
     color: white;
 }
 
-/* Typography */
+/* ========= TYPOGRAPHY ========= */
 
 h1, h2, h3{
     font-family: Arial, sans-serif;
@@ -47,6 +48,8 @@ a{
     color: white;
 }
 
+/* Sections */
+
 section{
     border-top: 2px solid hsl(0, 0%, 50%, 0.4);
     margin-top: 0;
@@ -54,13 +57,15 @@ section{
     padding: 4rem 11rem;
 }
 
+/* Call-to-action Buttons */
+
 .call-to-action{
     border: 1px solid hsla(0, 0%, 100%, 0.6);
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 0.5rem 1rem;
 }
 
-/* Header & Navigation */
+/* ========= HEADER & NAVIGATION ========= */
 
 header{
     position: sticky;
@@ -204,6 +209,8 @@ nav li:not(:last-child){
 
 /* ========= ABOUT PAGE ========= */
 
+/* Backstory Section */
+
 .backstory-container{
     display: flex;
     align-items: center;
@@ -228,6 +235,8 @@ nav li:not(:last-child){
     width: 70%;
 }
 
+/* Mission & Vision Section */
+
 .mission-vision-cards-container{
     display: flex;
     gap: 1.5rem;
@@ -238,6 +247,8 @@ nav li:not(:last-child){
     padding: 1.2rem 1.2rem;
     background-color: hsl(215, 27%, 16%);
 }
+
+/* Why Choose Us Section */
 
 .why-choose-us-container ul{
     margin-left: 1rem;
@@ -266,7 +277,88 @@ nav li:not(:last-child){
     border-radius: 4px;
 }
 
-/* CTA Banner */
+/* ========= ENQUIRY PAGE ========= */
+
+/* Form Section */
+
+.form-faq-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.form-fields-container{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    gap: 1rem;
+}
+
+.name-fields-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-fields{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+}
+
+.form-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 2.5rem;
+    background-color: hsl(215, 27%, 16%);
+    color: white;
+    border: 1px solid hsl(0, 0%, 100%, 0.1);
+    border-radius: 4px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+
+textarea{
+    height: 7rem;
+    background-color: hsl(215, 27%, 16%);
+    color: white;
+    border: 1px solid hsl(0, 0%, 100%, 0.1);
+    border-radius: 4px;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+}
+
+.form button{
+    border: 1px solid hsla(0, 0%, 100%, 0.6);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    background-color: hsla(0, 0%, 100%, 0);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-faq p{
+    border-left: 2px solid hsla(0, 0%, 100%, 0.6);
+    padding-left: 1rem;
+}
+
+.form-faq a{
+    color: hsl(202, 100%, 50%);
+    font-family: Verdana, sans-serif;
+}
+
+/* FAQ Section */
+
+
+
+/* ========= CONTACT PAGE ========= */
+
+
+
+/* ========= CTA BANNER ========= */
 
 .cta-banner-container{
     display: flex;
@@ -277,7 +369,7 @@ nav li:not(:last-child){
     background-color: hsl(215, 27%, 16%);
 }
 
-/* Footer */
+/* ========= FOOTER ========= */
 
 footer{
     display: flex;

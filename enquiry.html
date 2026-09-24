@@ -45,38 +45,38 @@
         </section>
 
         <!-- Form and FAQ-->
-        <section>
-            <div>
+        <section class="form-faq">
+            <div class="form-faq-container">
                 <!-- Form -->
                 <div>
-                    <form>
-                        <div>
+                    <form class="form">
+                        <div class="form-fields-container">
+                            <div class="name-fields-container">
+                                <div class="name-fields">
+                                    <label for="firstName">First name *</label>
+                                    <input type="text" name="firstName" required placeholder="John">
+                                </div>
 
-                            <div>
-                                <label for="firstName">First name *</label>
-                                <input type="text" name="firstName" required placeholder="John">
+                                <div class="name-fields">
+                                    <label for="surname">Surname *</label>
+                                    <input type="text" name="surname" required placeholder="Doe">
+                                </div>
                             </div>
 
-                            <div>
-                                <label for="lastName">Last name *</label>
-                                <input type="text" name="lastName" required placeholder="Doe">
-                            </div>
-
-                            <div>
+                            <div class="form-fields"> 
                                 <label for="email">Email address *</label>
                                 <input type="email" name="email" required placeholder="john@example.com">
                             </div>
 
-                            <div>
+                            <div class="form-fields">
                                 <label for="phone">Phone number (optional)</label>
                                 <input type="tel" name="phone" placeholder="000 000 0000">
                             </div>
 
-                            <div>
+                            <div class="form-fields">
                                 <label for="message">Message / details *</label>
                                 <textarea name="message" required placeholder="Briefly describe what you need"></textarea>
                             </div>
-
                         </div>
 
                         <button type="submit">Send enquiry</button>
@@ -86,53 +86,51 @@
                 </div>
 
                 <!-- FAQ -->
-                <aside>
+                <aside class="faq">
                     <h2>FAQ</h2>
                     <h3>Common questions</h3>
 
-                    <div>
+                    <div class="faq-container">
 
                         <!-- Uses the <details> tag to display a disclosure widget -->
-                        <details>
+                        <details class="questions">
                             <summary>Do you provide a free quote?</summary>
                             <p>Yes. All quotes are free and come with no obligation. Fill in the enquiry form or contact us directly and we'll assess your requirements before providing a detailed quote.</p>
                         </details>
 
-                        <details>
+                        <details class="questions">
                             <summary>What areas do you service?</summary>
                             <p>We cover the Helderberg area as well as Cape Town, Stellenbosch and the surrounding winelands.</p>
                         </details>
 
-                        <details>
+                        <details class="questions"> 
                             <summary>How long does a typical installation take?</summary>
                             <p>It depends on the scope of work. Small to medium jobs won't take longer than a day or two. We'll give you a time estimate when we quote.</p>
                         </details>
 
-                        <details>
+                        <details class="questions">
                             <summary>Are you registered and qualified?</summary>
                             <p>Yes. Vision Security Systems is run by a qualified technician and is registered with PSIRA (Private Security Industry Regulatory Authority).</p>
                         </details>
 
-                        <details>
+                        <details class="questions">
                             <summary>Do you offer a warranty on installations?</summary>
                             <p>Yes. If something isn't right with the installation, we'll come back and fix it. Specific warranty terms are confirmed in writing at the time of quoting.</p>
                         </details>
 
-                        <details>
+                        <details class="questions">
                             <summary>Can you work on an existing system?</summary>
                             <p>Of course. We can extend, repair or integrate existing CCTV, alarm and electric fence systems regardless of who originally installed them unless they are severely outdated or defective.</p>
                         </details>
 
-                        <details>
+                        <details class="questions">
                             <summary>What payment methods do you accept?</summary>
                             <p>We accept EFT bank transfer. Payment terms are confirmed per job and detailed in the quote.</p>
                         </details>
-
                     </div>
                 </aside>
             </div>
         </section>
-
     </main>
 
     <!-- Website footer. Includes copyright and company location -->
