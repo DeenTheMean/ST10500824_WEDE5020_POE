@@ -321,6 +321,9 @@ input{
 
 textarea{
     height: 7rem;
+    min-height: 7rem;
+    min-width: 100%;
+    max-width: 100%;
     background-color: hsl(215, 27%, 16%);
     color: white;
     border: 1px solid hsl(0, 0%, 100%, 0.1);
@@ -340,25 +343,44 @@ textarea{
     cursor: pointer;
 }
 
-.form-faq p{
+.form-cta{
     border-left: 2px solid hsla(0, 0%, 100%, 0.6);
     padding-left: 1rem;
 }
 
-.form-faq a{
+.form-cta a{
     color: hsl(202, 100%, 50%);
     font-family: Verdana, sans-serif;
 }
 
 /* FAQ Section */
 
+.faq-container{
+    border: 1px solid hsl(0, 0%, 100%, 0.1);
+    background-color: hsl(215, 27%, 16%);
+    width: 400px;
+    padding: 0 0;
+    margin: 0 0;
+}
 
+.questions{
+    padding: 0.5rem 0.5rem;
+    border-bottom: 1px solid hsl(0, 0%, 100%, 0.1);
+}
+
+.questions summary{
+    cursor: pointer;
+}
+
+.questions p{
+    padding-top: 1rem;
+}
 
 /* ========= CONTACT PAGE ========= */
 
 
 
-/* ========= CTA BANNER ========= */
+/* ========= CALL-TO-ACTION BANNER ========= */
 
 .cta-banner-container{
     display: flex;
