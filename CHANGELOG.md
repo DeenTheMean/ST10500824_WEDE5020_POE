@@ -7,12 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Services page styling.
-- Enquiry page styling.
-- Contact page styling.
 - Final styling tweaks.
 - JavaScript implementation.
 - Website hosting.
+
+## [0.4.0] - 2026-09-25
+
+### Added
+
+- services.html:
+    - Service cards layout and visual styling.
+- enquiry.html:
+    - Form section layout and styling.
+    - FAQ section layout and styling.
+- contact.html:
+    - Contact information layout and styling.
+    - Added an embedded Google Maps feature for the address.
+    - Operating hours layout and styling.
+
+### Changed
+
+- Resized some image files so that they have similar aspect ratios.
+- Replaced the securitykeypad.jpg image.
 
 ## [0.3.0] - 2026-09-24
 

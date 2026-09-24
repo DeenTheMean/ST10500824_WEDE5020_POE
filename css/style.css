@@ -166,7 +166,6 @@ nav li:not(:last-child){
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    /* background-color: hsla(175, 100%, 59%, 0.85); */
     text-shadow: none;
     color: white;
     border-radius: 7px;
@@ -200,7 +199,7 @@ nav li:not(:last-child){
 
 .preview-card{
     width: 33%;
-    border: 1px solid hsl(0, 0%, 100%, 0.2);
+    border: 1px solid hsl(0, 0%, 100%, 0.1);
     padding: 1.2rem 1.2rem;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
@@ -243,7 +242,7 @@ nav li:not(:last-child){
 }
 
 .mission-vision-cards{
-    border: 1px solid hsl(0, 0%, 100%, 0.2);
+    border: 1px solid hsl(0, 0%, 100%, 0.1);
     padding: 1.2rem 1.2rem;
     background-color: hsl(215, 27%, 16%);
 }
@@ -265,7 +264,7 @@ nav li:not(:last-child){
 .service-cards{
     display: flex;
     align-items: center;
-    border: 1px solid hsl(0, 0%, 100%, 0.2);
+    border: 1px solid hsl(0, 0%, 100%, 0.1);
     border-radius: 10px;
     background-color: hsl(215, 27%, 16%);
     padding: 1.8rem 1.8rem;
@@ -378,7 +377,41 @@ textarea{
 
 /* ========= CONTACT PAGE ========= */
 
+.contact-details-container{
+    display: flex;
+    gap: 4rem;
+}
 
+.contact-numbers{
+    width: 50%;
+}
+
+.contact-card{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid hsl(0, 0%, 100%, 0.1);
+    border-radius: 4px;
+    background-color: hsl(215, 27%, 16%);
+    margin: 1rem 0;
+    padding: 0.8rem 1.5rem;
+}
+
+.address-hours{
+    width: 50%;
+}
+
+.address{
+    margin-bottom: 2rem;
+}
+
+.operating-hours div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid hsl(0, 0%, 100%, 0.1);
+    background-color: hsl(215, 27%, 16%);
+}
 
 /* ========= CALL-TO-ACTION BANNER ========= */
 
@@ -387,7 +420,7 @@ textarea{
     justify-content: space-between;
     align-items: center;
     padding: 1.8rem 1.8rem;
-    border: 1px solid hsl(0, 0%, 100%, 0.2);
+    border: 1px solid hsl(0, 0%, 100%, 0.1);
     background-color: hsl(215, 27%, 16%);
 }
 
