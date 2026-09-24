@@ -184,6 +184,7 @@ nav li:not(:last-child){
 
 .overview img{
     width: 25%;
+    border-radius: 4px;
 }
 
 /* Services Preview Section */
@@ -218,8 +219,9 @@ nav li:not(:last-child){
 }
 
 .backstory-image-container img{
-    width: 90%;
+    width: 300px;
     margin-bottom: 1rem;
+    border-radius: 4px;
 }
 
 .backstory-text{
@@ -243,6 +245,26 @@ nav li:not(:last-child){
 
 /* ========= SERVICES PAGE ========= */
 
+.service-cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.service-cards{
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(0, 0%, 100%, 0.2);
+    border-radius: 10px;
+    background-color: hsl(215, 27%, 16%);
+    padding: 1.8rem 1.8rem;
+    gap: 2rem;
+}
+
+.service-images{
+    width: 200px;
+    border-radius: 4px;
+}
 
 /* CTA Banner */
 
