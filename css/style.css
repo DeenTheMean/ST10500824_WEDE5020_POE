@@ -248,12 +248,14 @@ nav li:not(:last-child){
 
 .backstory-container{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
 }
 
 .backstory-image-container{
-    width: 30%;
+    flex: 1 1 220px;
+    max-width: 300px;
     text-align: center;
     letter-spacing: 6px;
     line-height: 1rem;
@@ -261,23 +263,25 @@ nav li:not(:last-child){
 }
 
 .backstory-image-container img{
-    width: 300px;
-    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1rem;
     border-radius: 4px;
 }
 
 .backstory-text{
-    width: 70%;
+    flex: 3 1 400px;
 }
 
 /* Mission & Vision Section */
 
 .mission-vision-cards-container{
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .mission-vision-cards{
+    flex: 1 1 280px;
     border: 1px solid hsl(0, 0%, 100%, 0.1);
     padding: 1.2rem 1.2rem;
     background-color: hsl(215, 27%, 16%);
@@ -299,6 +303,7 @@ nav li:not(:last-child){
 
 .service-cards{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border: 1px solid hsl(0, 0%, 100%, 0.1);
     border-radius: 10px;
@@ -307,8 +312,13 @@ nav li:not(:last-child){
     gap: 2rem;
 }
 
+.service-cards-text{
+    flex: 1 1 300px;
+}
+
 .service-images{
-    width: 200px;
+    flex: 1 1 200px;
+    max-width: 200px;
     border-radius: 4px;
 }
 
@@ -318,25 +328,33 @@ nav li:not(:last-child){
 
 .form-faq-container{
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+}
+
+.form-faq-container > div{
+    flex: 2 1 400px;
 }
 
 .form-fields-container{
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
     gap: 1rem;
 }
 
 .name-fields-container{
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-between;
 }
 
 .name-fields{
     display: flex;
     flex-direction: column;
-    width: 310px;
+    flex: 1 1 250px;
 }
 
 .form-fields{
@@ -390,10 +408,15 @@ textarea{
 
 /* FAQ Section */
 
+.faq{
+    flex: 1 1 320px;
+}
+
 .faq-container{
     border: 1px solid hsl(0, 0%, 100%, 0.1);
     background-color: hsl(215, 27%, 16%);
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 0 0;
     margin: 0 0;
 }
@@ -415,17 +438,19 @@ textarea{
 
 .contact-details-container{
     display: flex;
+    flex-wrap: wrap;
     gap: 4rem;
 }
 
 .contact-numbers{
-    width: 50%;
+    flex: 1 1 320px;
 }
 
 .contact-card{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem 2rem;
     border: 1px solid hsl(0, 0%, 100%, 0.1);
     border-radius: 4px;
     background-color: hsl(215, 27%, 16%);
@@ -434,7 +459,7 @@ textarea{
 }
 
 .address-hours{
-    width: 50%;
+    flex: 1 1 320px;
 }
 
 .address{
