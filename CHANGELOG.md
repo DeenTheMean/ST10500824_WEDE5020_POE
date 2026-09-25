@@ -7,9 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Final styling tweaks.
 - JavaScript implementation.
 - Website hosting.
+
+## [0.5.0] - 2026-09-25
+
+### Added
+
+- Hamburger icon with dropdown list implemented in navigation bar for smaller screens (mobile).
+- Media queries for large screens, tablets, and smartphones.
+- 'Responsiveness on Different Screen Sizes' section added to [README.md](README.md).
+
+### Changed
+
+- Some headings are coloured with a blue accent colour.
+- More minor visual changes to the website's text and headings.
+- Some elements are highlighted or grow when hovered over.
+- Reworked visuals for the FAQ section:
+    - More padding.
+    - Font and colour changes.
+    - Default arrow is now a '+' sign that turns into an 'x' when clicked on.
+
+### Fixed
+
+- Padding for breakpoints.
+- The text in the hero image won't spill out on smaller screens anymore.
+- Numerous fixes to the way content responds and wraps on smaller screens.
 
 ## [0.4.0] - 2026-09-25
 

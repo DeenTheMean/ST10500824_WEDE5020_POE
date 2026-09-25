@@ -48,9 +48,9 @@ The website currently consists of six pages:
 
 ## Timeline and Milestones
 
-<img src="images/timeline1.png" alt="First screenshot of timeline" width="950px"/>
-<img src="images/timeline2.png" alt="Second screenshot of timeline" width="950px"/>
-<img src="images/timeline3.png" alt="Third screenshot of timeline" width="950px"/>
+<img src="images/timeline/timeline1.png" alt="First screenshot of timeline" width="950px"/>
+<img src="images/timeline/timeline2.png" alt="Second screenshot of timeline" width="950px"/>
+<img src="images/timeline/timeline3.png" alt="Third screenshot of timeline" width="950px"/>
 
 ## Part 1 Details
 
@@ -61,6 +61,14 @@ The website currently consists of six pages:
 - Research relating to the chosen organisation.
 - The basic structure and content of the website written in HTML.
 
+## Part 2 Details
+
+### Consists of
+
+- Website layout and structuring in CSS.
+- Website visual styling.
+- Website responsiveness to different screen sizes.
+
 ## Sitemap
 
 The main page is the **index page**. All pages can be accessed from any page via the navigation bar.
@@ -70,20 +78,21 @@ The main page is the **index page**. All pages can be accessed from any page via
 - Hero image and heading.
 - Brief organisation overview.
 - Preview of some services provided.
-- Call to action banner.
+- Call-to-action banner.
 
 ### About Page
 
 - Page heading.
 - Description of company.
 - Mission and vision.
-- Call to action banner.
+- A 'why choose us' section.
+- Call-to-action banner.
 
 ### Services Page
 
 - Page heading.
 - List of services provided.
-- Call to action banner.
+- Call-to-action banner.
 
 ### Enquiry Page
 
@@ -95,8 +104,57 @@ The main page is the **index page**. All pages can be accessed from any page via
 
 - Page heading.
 - Contact details.
-- Physical address and operating hours.
-- Call to action banner.
+- Emebeded map via Google Maps and operating hours.
+- Call-to-action banner.
+
+## Responsiveness on Different Screen Sizes
+
+### Smartphone
+
+<table>
+    <tr>
+        <td align="center">
+            <strong>Samsung Galaxy S25</strong><br/>
+            <img src="images/otherscreens/samsung-galaxy-s25.png" alt="Vision Security Systems website on Samsung Galaxy S25" height="800px"/>
+        </td>
+        <td align="center">
+            <strong>iPhone 17</strong><br/>
+            <img src="images/otherscreens/iphone-17.png" alt="Vision Security Systems website on iPhone 17" height="800px"/>
+        </td>
+    <tr>
+</table>
+
+### Tablet
+
+<table>
+    <tr>
+        <td align="center">
+            <strong>Samsung Galaxy Tab S9</strong><br/>
+            <img src="images/otherscreens/samsung-galaxy-tab-s9.png" alt="Vision Security Systems website on Samsung Galaxy Tab S9" height="800px"/>
+        </td>
+        <td align="center">
+            <strong>iPad (10th/11th Gen)</strong><br/>
+            <img src="images/otherscreens/ipad.png" alt="Vision Security Systems website on iPad (10th/11th Gen)" height="800px"/>
+        </td>
+    <tr>
+</table>
+
+### PC
+
+<table>
+    <tr>
+        <td align="center">
+            <strong>Desktop Monitor (Full HD)</strong><br/>
+            <img src="images/otherscreens/desktop-monitor.png" alt="Vision Security Systems website on desktop monitor" width="1000px"/>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <strong>Laptop Monitor</strong><br/>
+            <img src="images/otherscreens/laptop-monitor.png" alt="Vision Security Systems website on laptop monitor" height="650px"/>
+        </td>
+    <tr>
+</table>
 
 ## Changelog
 

@@ -79,6 +79,7 @@ section{
 /* Call-to-action Buttons */
 
 .call-to-action{
+    display: inline-block;
     border: 1px solid hsla(0, 0%, 100%, 0.6);
     border-radius: 4px;
     padding: 0.5rem 1rem;
@@ -375,16 +376,14 @@ nav li:not(:last-child){
 }
 
 .name-fields-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
-    justify-content: space-between;
 }
 
 .name-fields{
     display: flex;
     flex-direction: column;
-    flex: 1 1 250px;
 }
 
 .form-fields{
@@ -617,6 +616,12 @@ iframe:hover, iframe:focus{
     a:first-child:hover, a:first-child:focus{
         background-color: hsl(205, 90%, 75%);
     }
+}
+
+.cta-banner-container > div:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
 /* ========= FOOTER ========= */
