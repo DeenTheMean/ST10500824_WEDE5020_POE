@@ -84,6 +84,10 @@ section{
     padding: 0.5rem 1rem;
 }
 
+.call-to-action:hover, .call-to-action:focus{
+    background-color: hsl(215, 27%, 19%);
+}
+
 /* ========= HEADER & NAVIGATION ========= */
 
 header{
@@ -121,15 +125,15 @@ header{
 
 /* Logo */
 
-.logo img{
-    height: 65px;
-    width: auto;
-}
-
 .logo{
     display: flex;
     align-items: left;
     gap: 0.6rem;
+}
+
+.logo img{
+    height: 65px;
+    width: auto;
 }
 
 /* Navigation Bar */
@@ -145,13 +149,14 @@ nav a{
     color: hsl(210, 40%, 96%);
     text-decoration: none;
     font-family: Verdana, sans-serif;
+    font-weight: 100;
     padding: 0.4rem 0.2rem;
     border-bottom: 2px solid transparent;
 }
 
-nav a:hover, nav a:focus, nav a:active{
-    border-bottom: 2px solid white;
-    transition: border-bottom 0.175s ease-in-out;
+nav a:hover, nav a:focus{
+    color: hsl(210, 40%, 76%);
+    transition: color 0.175s ease-in-out;
     text-decoration: none;
 }
 
@@ -211,6 +216,11 @@ nav li:not(:last-child){
     font-weight: 550;
     border-radius: 7px;
     border: 1px solid white;
+}
+
+.hero-text a:hover{
+    scale: 105%;
+    transition: scale 0.1s ease-in-out;
 }
 
 /* Overview Section */
@@ -328,6 +338,10 @@ nav li:not(:last-child){
     gap: 2rem;
 }
 
+.service-cards:hover{
+    border: 1px solid hsl(0, 0%, 100%, 0.3);
+}
+
 .service-cards-text{
     flex: 1 1 300px;
 }
@@ -401,6 +415,11 @@ textarea{
     font-size: 1rem;
 }
 
+input:hover, input:focus,
+textarea:hover, textarea:focus{
+    border: 1px solid hsl(0, 0%, 100%, 0.3);
+}
+
 .form button{
     border: 1px solid hsla(0, 0%, 100%, 0.6);
     border-radius: 4px;
@@ -414,6 +433,10 @@ textarea{
     cursor: pointer;
 }
 
+.form button:hover, .form button:focus{
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
 .form-cta{
     border-left: 2px solid hsla(0, 0%, 100%, 0.6);
     padding-left: 1rem;
@@ -422,6 +445,10 @@ textarea{
 .form-cta a{
     color: hsl(205, 90%, 65%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-cta a:hover, .form-cta a:focus{
+    color: hsl(205, 90%, 75%);
 }
 
 /* FAQ Section */
@@ -440,12 +467,39 @@ textarea{
 }
 
 .questions{
-    padding: 0.5rem 0.5rem;
+    padding: 1rem 1.2rem;
     border-bottom: 1px solid hsl(0, 0%, 100%, 0.1);
 }
 
 .questions summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    color: hsl(210, 40%, 96%);
+    font-family: monospace;
     cursor: pointer;
+    list-style: none; 
+}
+
+.questions summary:hover{
+    color: hsl(210, 40%, 76%);
+}
+
+.questions summary::-webkit-details-marker{
+    display: none;
+}
+
+.questions summary::after{
+    content: '+';
+    font-size: 1.3rem;
+    color: hsl(205, 90%, 65%);
+    transition: transform 0.2s ease;
+}
+
+.questions[open] summary::after{
+    content: '+';
+    transform: rotate(45deg);
 }
 
 .questions p{
@@ -479,8 +533,13 @@ textarea{
     }
     p{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 100;
         color: hsl(213, 32%, 80%);
     }
+}
+
+.contact-card:hover, .contact-card:focus{
+    border: 1px solid hsl(0, 0%, 100%, 0.3);
 }
 
 .contact-card-text p{
@@ -510,6 +569,11 @@ textarea{
     margin-bottom: 2rem;
 }
 
+iframe:hover, iframe:focus{
+    scale: 105%;
+    transition: scale 0.175s ease-in-out;
+}
+
 .operating-hours div{
     display: flex;
     justify-content: space-between;
@@ -518,6 +582,14 @@ textarea{
     padding-top: 1rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
+}
+
+.open{
+    color: hsl(210, 40%, 96%);
+}
+
+.closed{
+    color: hsla(213, 32%, 80%, 0.7);
 }
 
 /* ========= CALL-TO-ACTION BANNER ========= */
@@ -534,10 +606,16 @@ textarea{
     h3{
         color: hsl(210, 40%, 96%);
     }
+    a:hover, a:focus{
+        background-color: hsl(215, 27%, 26%);
+    }
     a:first-child{
         background-color: hsl(205, 90%, 65%);
-        color: black;
+        color: hsl(0, 0%, 15%);
         border: none;
+    }
+    a:first-child:hover, a:first-child:focus{
+        background-color: hsl(205, 90%, 75%);
     }
 }
 
