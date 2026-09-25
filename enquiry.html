@@ -21,6 +21,9 @@
                 </a>
             </div>
 
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">&#9776;</label>
+
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -54,28 +57,28 @@
                             <div class="name-fields-container">
                                 <div class="name-fields">
                                     <label for="firstName">First name *</label>
-                                    <input type="text" name="firstName" required placeholder="John">
+                                    <input type="text" id="firstName" name="firstName" required placeholder="John">
                                 </div>
 
                                 <div class="name-fields">
                                     <label for="surname">Surname *</label>
-                                    <input type="text" name="surname" required placeholder="Doe">
+                                    <input type="text" id="surname" name="surname" required placeholder="Doe">
                                 </div>
                             </div>
 
                             <div class="form-fields"> 
                                 <label for="email">Email address *</label>
-                                <input type="email" name="email" required placeholder="john@example.com">
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
                             </div>
 
                             <div class="form-fields">
                                 <label for="phone">Phone number (optional)</label>
-                                <input type="tel" name="phone" placeholder="000 000 0000">
+                                <input type="tel" id="phone" name="phone" placeholder="000 000 0000">
                             </div>
 
                             <div class="form-fields">
                                 <label for="message">Message / details *</label>
-                                <textarea name="message" required placeholder="Briefly describe what you need"></textarea>
+                                <textarea id="message" name="message" required placeholder="Briefly describe what you need"></textarea>
                             </div>
                         </div>
 
