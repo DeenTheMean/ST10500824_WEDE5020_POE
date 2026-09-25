@@ -20,31 +20,35 @@ img{
 }
 
 body{
-    font-family: Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     background-color: hsl(215, 27%, 9%);
-    color: white;
+    color: hsl(213, 32%, 80%);
 }
 
 /* ========= TYPOGRAPHY ========= */
 
 h1, h2, h3{
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
     margin-bottom: 0.75rem;
 }
 
 h1{
     font-size: 3rem;
+    color: hsl(210, 40%, 96%);
 }
 
 h2{
     font-size: 1.75rem;
+    color: hsl(210, 40%, 96%);
 }
 
 h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.25rem;
+    color: hsl(205, 90%, 65%);
 }
 
 p{
@@ -55,7 +59,12 @@ a{
     text-decoration: none;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
-    color: white;
+    color: hsl(210, 40%, 96%);
+}
+
+.page-heading h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: hsl(205, 90%, 65%);
 }
 
 /* Sections */
@@ -107,7 +116,7 @@ header{
     font-size: 1.8rem;
     line-height: 1;
     cursor: pointer;
-    color: white;
+    color: hsl(210, 40%, 96%);
 }
 
 /* Logo */
@@ -133,10 +142,9 @@ nav ul{
 }
 
 nav a{
-    color: white;
+    color: hsl(210, 40%, 96%);
     text-decoration: none;
     font-family: Verdana, sans-serif;
-    font-weight: 600;
     padding: 0.4rem 0.2rem;
     border-bottom: 2px solid transparent;
 }
@@ -152,7 +160,7 @@ nav li:first-child a{
 }
 
 nav li:not(:last-child){
-    border-right: 1px solid #ccc;
+    border-right: 1px solid white;
     padding-right: 1.5rem;
 }
 
@@ -184,7 +192,7 @@ nav li:not(:last-child){
 
 .hero-text{
     position: relative;
-    color: white;
+    color: hsl(210, 40%, 96%);
     font-size: 1.3rem;
     text-shadow: 2px 2px 4px black;
     padding-left: var(--section-padding-x);
@@ -199,11 +207,10 @@ nav li:not(:last-child){
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    text-shadow: none;
-    color: white;
+    color: hsl(210, 40%, 96%);
+    font-weight: 550;
     border-radius: 7px;
-    border: 2px solid black;
-    box-shadow: 3px 3px 4px black;
+    border: 1px solid white;
 }
 
 /* Overview Section */
@@ -216,7 +223,6 @@ nav li:not(:last-child){
 }
 
 .overview-text{
-    font-size: 1.2rem;
     flex: 1 1 400px;
 }
 
@@ -231,6 +237,9 @@ nav li:not(:last-child){
 .preview-cards-container{
     display: flex;
     flex-wrap: wrap;
+    h3{
+        color: hsl(210, 40%, 96%);
+    }
 }
 
 .preview-card{
@@ -278,6 +287,9 @@ nav li:not(:last-child){
 .mission-vision-cards-container{
     display: flex;
     flex-wrap: wrap;
+    h3{
+        color: hsla(210, 40%, 96%);
+    }
 }
 
 .mission-vision-cards{
@@ -291,6 +303,7 @@ nav li:not(:last-child){
 
 .why-choose-us-container ul{
     margin-left: 1rem;
+    line-height: 2rem;
 }
 
 /* ========= SERVICES PAGE ========= */
@@ -299,6 +312,9 @@ nav li:not(:last-child){
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    h3{
+        color: hsla(210, 40%, 96%);
+    }
 }
 
 .service-cards{
@@ -365,7 +381,7 @@ nav li:not(:last-child){
 input{
     height: 2.5rem;
     background-color: hsl(215, 27%, 16%);
-    color: white;
+    color: hsl(210, 40%, 96%);
     border: 1px solid hsl(0, 0%, 100%, 0.1);
     border-radius: 4px;
     padding: 1rem 1rem;
@@ -378,7 +394,7 @@ textarea{
     min-width: 100%;
     max-width: 100%;
     background-color: hsl(215, 27%, 16%);
-    color: white;
+    color: hsl(210, 40%, 96%);
     border: 1px solid hsl(0, 0%, 100%, 0.1);
     border-radius: 4px;
     padding: 0.7rem 1rem;
@@ -391,8 +407,10 @@ textarea{
     padding: 0.5rem 1rem;
     margin: 1rem 0;
     background-color: hsla(0, 0%, 100%, 0);
-    color: white;
+    color: hsl(210, 40%, 96%);
     font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
 }
 
@@ -402,8 +420,8 @@ textarea{
 }
 
 .form-cta a{
-    color: hsl(202, 100%, 50%);
-    font-family: Verdana, sans-serif;
+    color: hsl(205, 90%, 65%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* FAQ Section */
@@ -456,6 +474,32 @@ textarea{
     background-color: hsl(215, 27%, 16%);
     margin: 1rem 0;
     padding: 0.8rem 1.5rem;
+    h3{
+        color: hsl(210, 40%, 96%);
+    }
+    p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: hsl(213, 32%, 80%);
+    }
+}
+
+.contact-card-text p{
+    font-style: italic;
+}
+
+.contact-icon{
+    width: 45px;
+    text-align: center;
+    font-size: 1.7rem;
+    border: 1px solid hsl(0, 0%, 100%, 0.4);
+    border-radius: 50%;
+}
+
+.contact-cta{
+    margin-top: 2rem;
+    h3{
+        font-size: 1.2rem;
+    }
 }
 
 .address-hours{
@@ -469,9 +513,11 @@ textarea{
 .operating-hours div{
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0.5rem;
     border: 1px solid hsl(0, 0%, 100%, 0.1);
     background-color: hsl(215, 27%, 16%);
+    padding-top: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
 }
 
 /* ========= CALL-TO-ACTION BANNER ========= */
@@ -485,6 +531,14 @@ textarea{
     padding: 1.8rem 1.8rem;
     border: 1px solid hsl(0, 0%, 100%, 0.1);
     background-color: hsl(215, 27%, 16%);
+    h3{
+        color: hsl(210, 40%, 96%);
+    }
+    a:first-child{
+        background-color: hsl(205, 90%, 65%);
+        color: black;
+        border: none;
+    }
 }
 
 /* ========= FOOTER ========= */
@@ -496,7 +550,7 @@ footer{
     padding: 2rem var(--section-padding-x);
     border-top: 2px solid hsl(0, 0%, 50%, 0.4);
     justify-content: space-between;
-    font-size: 0.80rem;
+    font-size: 0.8rem;
     color: hsla(0, 0%, 100%, 0.65);
 }
 
