@@ -27,7 +27,7 @@
             </div>
 
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">&#9776;</label>
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</label>
 
             <nav>
                 <ul>
@@ -67,7 +67,7 @@
                         </div>
                     </a>
                     <!-- Links to WhatsApp chat -->
-                    <a href="https://wa.me/27797735256" target="_blank">
+                    <a href="https://wa.me/27797735256" target="_blank" rel="noopener noreferrer">
                         <div class="contact-card">
                             <p class="contact-icon">💬</p>
                             <div class="contact-card-text">
@@ -107,6 +107,60 @@
                         <div><p>Saturday & Sunday</p> <p class="closed">Closed</p></div>
                     </div>          
                 </div>
+            </div>
+        </section>
+
+        <!-- General message form  -->
+        <section class="contact-form-section">
+            <div class="contact-form-container">
+                <h3>SEND A MESSAGE</h3>
+                <h2>GENERAL ENQUIRIES</h2>
+                <p>Got a general question, some feedback, or need to follow up on existing work? Send us a message below. Looking for a quote instead? Use our <a href="enquiry.html">enquiry form</a>.</p>
+
+                <form class="form" id="contact-form" action="https://formspree.io/f/REPLACE_WITH_CONTACT_FORM_ID" method="POST">
+                    <div class="form-fields-container">
+                        <div class="name-fields-container">
+                            <div class="name-fields">
+                                <label for="contact-name">Full name *</label>
+                                <input type="text" id="contact-name" name="name" required placeholder="Jane Smith">
+                                <small class="error" id="contact-name-error"></small>
+                            </div>
+
+                            <div class="name-fields">
+                                <label for="contact-email">Email address *</label>
+                                <input type="email" id="contact-email" name="email" required placeholder="jane@example.com">
+                                <small class="error" id="contact-email-error"></small>
+                            </div>
+                        </div>
+
+                        <div class="form-fields">
+                            <label for="contact-phone">Phone number (optional)</label>
+                            <input type="tel" id="contact-phone" name="phone" placeholder="000 000 0000">
+                            <small class="error" id="contact-phone-error"></small>
+                        </div>
+
+                        <div class="form-fields">
+                            <label for="contact-subject">What's this about? *</label>
+                            <select id="contact-subject" name="subject" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="General question">General question</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Existing job / service follow-up">Existing job / service follow-up</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <small class="error" id="contact-subject-error"></small>
+                        </div>
+
+                        <div class="form-fields">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" required placeholder="Type your message here"></textarea>
+                            <small class="error" id="contact-message-error"></small>
+                        </div>
+                    </div>
+
+                    <button type="submit">Send message</button>
+                    <p class="form-success" id="contact-form-success" role="status"></p>
+                </form>
             </div>
         </section>
     </main>

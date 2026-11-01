@@ -391,7 +391,7 @@ nav li:not(:last-child){
     flex-direction: column;
 }
 
-input{
+input, select{
     height: 2.5rem;
     background-color: hsl(215, 27%, 16%);
     color: hsl(210, 40%, 96%);
@@ -399,6 +399,13 @@ input{
     border-radius: 4px;
     padding: 1rem 1rem;
     font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color-scheme: dark;
+}
+
+select{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
 }
 
 textarea{
@@ -415,8 +422,51 @@ textarea{
 }
 
 input:hover, input:focus,
+select:hover, select:focus,
 textarea:hover, textarea:focus{
     border: 1px solid hsl(0, 0%, 100%, 0.3);
+}
+
+input.invalid, select.invalid, textarea.invalid{
+    border: 1px solid hsl(0, 75%, 60%);
+}
+
+.error{
+    display: block;
+    min-height: 1rem;
+    margin-top: 0.3rem;
+    color: hsl(0, 75%, 65%);
+    font-size: 0.85rem;
+}
+
+.form-success{
+    display: none;
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid hsl(140, 50%, 45%);
+    border-radius: 4px;
+    background-color: hsl(140, 30%, 16%);
+    color: hsl(140, 60%, 75%);
+    font-weight: bold;
+}
+
+.form-success.visible{
+    display: block;
+}
+
+.form-error-banner{
+    display: none;
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid hsl(0, 60%, 50%);
+    border-radius: 4px;
+    background-color: hsl(0, 30%, 18%);
+    color: hsl(0, 75%, 80%);
+    font-weight: bold;
+}
+
+.form-error-banner.visible{
+    display: block;
 }
 
 .form button{
@@ -515,6 +565,18 @@ textarea:hover, textarea:focus{
 
 .contact-numbers{
     flex: 1 1 320px;
+}
+
+.contact-form-container{
+    max-width: 650px;
+}
+
+.contact-form-container p{
+    color: hsl(213, 32%, 80%);
+}
+
+.contact-form-container .form-fields-container{
+    max-width: 100%;
 }
 
 .contact-card{
