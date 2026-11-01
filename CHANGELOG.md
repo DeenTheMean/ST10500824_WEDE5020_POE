@@ -7,8 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- JavaScript implementation.
-- Website hosting.
+- Website hosting (Afrihost).
+- Image gallery with lightbox.
+
+## [0.6.0] - 2026-11-01
+
+### Added
+
+- Added a general-message contact form to contact.html.
+- script.js (added the JavaScript file):
+    - Hamburger menu now closes automatically once a link is clicked.
+    - Opening one question in the FAQ section now closes any others that were open.
+    - Form validation for the enquiry and contact forms.
+    - Forms submit via the Fetch API (AJAX). Formspree IDs must still be implemented.
+- Styling for form error states, the new success/error message banners, and the `<select>` element used in the new contact form.
+- Added robots.txt for SEO.
+- Added sitemap.xml.
+- Meta tags with descriptions for every page.
+
+### Changed
+
+- The small blue labels above headings are now `<p class="eyebrow">` elements, so every page reads headings in order instead of there being a reverse hierarchy.
+- Styling for the eyebrow class instead of the h2 headings, so the labels look the same.
+
+### Fixed
+
+- The browser's built-in validation popups were blocking submission before script.js could run. Native HTML validation is now switched off (`form.noValidate = true`) once the script loads. HTML validation remains there if JavaScript fails for whatever reason.
+- Added `rel="noopener noreferrer"` to the WhatsApp link on contact.html as a security best practice.
 
 ## [0.5.0] - 2026-09-25
 

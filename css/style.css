@@ -62,9 +62,17 @@ a{
     color: hsl(210, 40%, 96%);
 }
 
-.page-heading h2{
+.eyebrow{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
     color: hsl(205, 90%, 65%);
+}
+
+.eyebrow-page{
+    font-size: 1.75rem;
 }
 
 /* Sections */
@@ -571,7 +579,7 @@ input.invalid, select.invalid, textarea.invalid{
     max-width: 650px;
 }
 
-.contact-form-container p{
+.contact-form-container > p:not(.eyebrow){
     color: hsl(213, 32%, 80%);
 }
 
@@ -728,7 +736,7 @@ footer{
         font-size: 2rem;
     }
  
-    h2{
+    h2, .eyebrow-page{
         font-size: 1.5rem;
     }
 

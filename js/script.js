@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
     initFaqAccordion();
+    initForms();
 });
 
 function initMobileNav() {
@@ -53,6 +54,8 @@ function initForms() {
     const forms = document.querySelectorAll('form.form');
  
     forms.forEach((form) => {
+        form.noValidate = true;
+
         const fields = form.querySelectorAll('input, select, textarea');
  
         fields.forEach((field) => {
@@ -151,7 +154,7 @@ function submitFormViaAjax(form, successE1) {
                 hideFormError(form);
                 if (successEl) {
                     successEl.textContent =
-                        "Thanks — your message has been sent. We'll be in touch soon.";
+                        "Message sent successfully! We'll get back to you soon.";
                     successEl.classList.add('visible');
                 }
             } else {
