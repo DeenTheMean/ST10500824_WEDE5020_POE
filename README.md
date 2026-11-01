@@ -158,7 +158,7 @@ The main page is the **index page**. All pages can be accessed from any page via
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) detailed version history and changes made.
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history and changes made.
 
 ## References
 
