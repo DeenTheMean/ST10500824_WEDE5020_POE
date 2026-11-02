@@ -331,7 +331,7 @@ nav li:not(:last-child){
 
 .gallery-grid{
     list-style: none;
-    columns: 3 150px;
+    columns: 4 150px;
     column-gap: 1rem;
     margin-top: 1.5rem;
 }
@@ -369,7 +369,7 @@ nav li:not(:last-child){
     outline-offset: 2px;
 }
 
-/* Lightbox (js/gallery.js) */
+/* Lightbox */
 
 html.lightbox-open{
     overflow: hidden;
