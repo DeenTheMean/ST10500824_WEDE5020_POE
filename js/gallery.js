@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let current = 0;
     let lastFocused = null;
 
+    // Display the lightbox with the image at the given index
     function show(index) {
+        // Wrap around at both ends
         current = (index + links.length) % links.length;
 
         const link = links[current];
@@ -22,12 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.caption.textContent = alt;
         lightbox.count.textContent = `${current + 1} / ${links.length}`;
 
+        // Prepare the cache for the neighbouring images so switching between them feels instant
         [current - 1, current + 1].forEach((i) => {
             const neighbour = links[(i + links.length) % links.length];
             new Image().src = neighbour.href;
         });
     }
 
+    // Open the lightbox with the image at the given index
     function open(index, trigger) {
         lastFocused = trigger;
         show(index);
@@ -35,10 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.classList.add('lightbox-open');
     }
 
+    // Close the lightbox if it is open
     function close() {
         if (lightbox.dialog.open) lightbox.dialog.close();
     }
 
+    // Add click handlers to all gallery links to open the lightbox
     links.forEach((link, index) => {
         link.addEventListener('click', (event) => {
             if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
@@ -47,20 +53,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Add handlers to close the lightbox and clean up when it is closed
     lightbox.dialog.addEventListener('close', () => {
         document.documentElement.classList.remove('lightbox-open');
         lightbox.image.removeAttribute('src');
         if (lastFocused) lastFocused.focus();
     });
 
+    // Add handlers for the lightbox buttons and keyboard/touch navigation
     lightbox.closeButton.addEventListener('click', close);
     lightbox.prevButton.addEventListener('click', () => show(current - 1));
     lightbox.nextButton.addEventListener('click', () => show(current + 1));
 
+    // Close the lightbox if the user clicks outside the image or presses Escape
     lightbox.dialog.addEventListener('click', (event) => {
         if (event.target === lightbox.dialog || event.target === lightbox.stage) close();
     });
 
+    // Add keyboard and touch navigation for the lightbox
     lightbox.dialog.addEventListener('keydown', (event) => {
         if (event.key === 'ArrowLeft') {
             event.preventDefault();
@@ -71,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Add touch navigation for the lightbox
     let touchStartX = null;
     lightbox.dialog.addEventListener(
         'touchstart',
@@ -90,14 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         { passive: true }
     );
-
-    if (links.length < 2) {
-        lightbox.prevButton.hidden = true;
-        lightbox.nextButton.hidden = true;
-        lightbox.count.hidden = true;
-    }
 });
 
+// Build the lightbox element
 function buildLightbox() {
     const dialog = document.createElement('dialog');
     dialog.className = 'lightbox';
@@ -131,6 +137,7 @@ function buildLightbox() {
     return { dialog, stage, image, caption, count, closeButton, prevButton, nextButton };
 }
 
+// Create a button element with the given class, label, and symbol
 function makeButton(className, label, symbol) {
     const button = document.createElement('button');
     button.type = 'button';

@@ -8,13 +8,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 - JavaScript animations.
-- Formspree implementation.
 - More content for the services page.
+- More photos for the gallery.
 - Replacement of the stock photo for the access control service card.
-- Update README in general.
-- Update references in README.md.
-- Comments for the JS code.
-- Website hosting (Afrihost).
+- Website domain registration and hosting (**Afrihost**).
+
+## [0.8.0] - 2026-11-02
+
+### Added
+
+- Added descriptive alt text to every gallery image.
+- Formspree ID links have been added to the forms on [enquiry.html](enquiry.html) and [contact.html](contact.html). Form submissions are working.
+
+### Changed
+
+- The gallery now displays four columns instead of three on wide screens. Still two on narrow (mobile) screens.
+
+### Fixed
+
+- Added the dimensions (width/height) of each gallery image in their HTML attributes. This is to keep the columns displaying consistently even when the images aren't loaded.
 
 ## [0.7.0] - 2026-11-02
 

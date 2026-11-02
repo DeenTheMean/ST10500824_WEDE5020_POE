@@ -69,6 +69,14 @@ The website currently consists of six pages:
 - Website visual styling.
 - Website responsiveness to different screen sizes.
 
+## Part 3 Details
+
+### Consists of
+
+- On-site and off-site SEO.
+- JavaScript functionality (gallery, lightbox, forms).
+- Deployment.
+
 ## Sitemap
 
 The main page is the **index page**. All pages can be accessed from any page via the navigation bar.
@@ -172,3 +180,7 @@ Unsplash, n.d. Images. [Online]. Available at: https://www.unsplash.com. [Access
 Wireframes created in Microsoft PowerPoint.
 
 Timeline created in Microsoft Planner.
+
+[Formspree](https://formspree.io/) used for form submissions.
+
+Website hosted temporarily via [Netlify](https://www.netlify.com/).
