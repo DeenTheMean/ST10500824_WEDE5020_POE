@@ -7,33 +7,53 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- JavaScript animations.
+- Formspree implementation.
+- More content for the services page.
+- Replacement of the stock photo for the access control service card.
+- Comments for the JS code.
 - Website hosting (Afrihost).
-- Image gallery with lightbox.
+
+## [0.7.0] - 2026-11-02
+
+### Added
+
+- Added a gallery to [about.html](about.html) where you can view photos of the company's installations.
+- The gallery has a lightbox feature where you can view individual photos.
+- CSS styling for the gallery and lightbox.
+- JS code for gallery functionality in [gallery.js](gallery.js). You can click on individual photos and page through them.
+- The website is now being hosted temporarily through Netlify at [visionsecuritysystemssite.netlify.app](https://visionsecuritysystemssite.netlify.app/).
+
+### Changed
+
+- The security camera image on the home page is now an actual photo of the company's installation instead of a stock photo.
+- The security camera and electric fence photos on the services page have been changed.
+- Updated the links in [sitemap.xml](sitemap.xml) to the links for the website on Netlify.
 
 ## [0.6.0] - 2026-11-01
 
 ### Added
 
-- Added a general-message contact form to contact.html.
-- script.js (added the JavaScript file):
+- Added a general-message contact form to [contact.html](contact.html).
+- [script.js](script.js) (added the JavaScript file):
     - Hamburger menu now closes automatically once a link is clicked.
     - Opening one question in the FAQ section now closes any others that were open.
     - Form validation for the enquiry and contact forms.
     - Forms submit via the Fetch API (AJAX). Formspree IDs must still be implemented.
 - Styling for form error states, the new success/error message banners, and the `<select>` element used in the new contact form.
-- Added robots.txt for SEO.
-- Added sitemap.xml.
-- Meta tags with descriptions for every page.
+- Added [robots.txt](robots.txt) for SEO.
+- Added [sitemap.xml](sitemap.xml).
+- `<meta>` tags with descriptions for every page.
 
 ### Changed
 
 - The small blue labels above headings are now `<p class="eyebrow">` elements, so every page reads headings in order instead of there being a reverse hierarchy.
-- Styling for the eyebrow class instead of the h2 headings, so the labels look the same.
+- Styling for `class="eyebrow"` instead of the `<h2>` headings, so the labels look the same as before.
 
 ### Fixed
 
-- The browser's built-in validation popups were blocking submission before script.js could run. Native HTML validation is now switched off (`form.noValidate = true`) once the script loads. HTML validation remains there if JavaScript fails for whatever reason.
-- Added `rel="noopener noreferrer"` to the WhatsApp link on contact.html as a security best practice.
+- The browser's built-in validation popups were blocking submission before [script.js](script.js) could run. Native HTML validation is now switched off (`form.noValidate = true`) once the script loads. HTML validation remains there if JavaScript fails for whatever reason.
+- Added `rel="noopener noreferrer"` to the WhatsApp link on [contact.html](contact.html) as a security best practice.
 
 ## [0.5.0] - 2026-09-25
 
@@ -63,12 +83,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- services.html:
+- [services.html](services.html):
     - Service cards layout and visual styling.
-- enquiry.html:
+- [enquiry.html](enquiry.html):
     - Form section layout and styling.
     - FAQ section layout and styling.
-- contact.html:
+- [contact.html](contact.html):
     - Contact information layout and styling.
     - Added an embedded Google Maps feature for the address.
     - Operating hours layout and styling.
@@ -82,7 +102,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- about.html:
+- [about.html](about.html):
     - A new section (WHY CHOOSE US) was added to the page.
     - Backstory section layout established.
     - Added a caption for the image of Ebrahim Baderoen.
@@ -93,18 +113,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Changed the way the site's margin and padding is determined.
 - The site's content is padded to fill the center of the screen rather than being spread out.
-- The headings on each page is now considered a section (marked with section tags).
+- The headings on each page is now considered a section (marked with `<section>` tags).
 - Minor changes to spacing and layout of content.
 
 ### Fixed
 
-- Added favicon to all web pages instead of just index.html.
+- Added favicon to all web pages instead of just [index.html](index.html).
 
 ## [0.2.0] - 2026-09-23
 
 ### Added
 
-- External CSS file.
+- External [CSS file](style.css).
 - Base typography styling.
 - Base website colour scheme.
 - Navigation bar structure and layout.
@@ -114,7 +134,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Seperated sections with borders.
 - Footer layout and visual styling.
 - Added Vision favicon.
-- index.html:
+- [index.html](index.html):
     - Hero image layout with text overlay.
     - Hero image visual styling.
     - Overview section layout and visual styling.
@@ -123,7 +143,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Minor changes to index.html page content.
+- Minor changes to [index.html](index.html) page content.
 
 ## [0.1.0] - 2026-09-18
 
